@@ -9,11 +9,12 @@ import { AppServiceService } from 'src/app/app-service.service';
 })
 export class AddNewStudentComponent implements OnInit {
 
-  constructor(private service : AppServiceService, private router: Router) { }
+  constructor(private service: AppServiceService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
   createStudent(value){
 
     const student = {
@@ -21,14 +22,14 @@ export class AddNewStudentComponent implements OnInit {
       name : value.name,
       age : value.age,
       hometown : value.Hometown
-    }
+    };
 
 
-    this.service.addStudent(student).subscribe((response)=>{
-      this.router.navigate(['student'])
-    },(error)=>{
-      console.log('ERROR - ', error)
-    })
+    this.service.addStudent(student).subscribe((response) => {
+      this.router.navigate(['student']);
+    }, (error) => {
+      console.log('ERROR - ', error);
+    });
   }
 
 }

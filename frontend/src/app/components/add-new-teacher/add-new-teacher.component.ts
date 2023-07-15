@@ -9,25 +9,26 @@ import { Router } from '@angular/router';
 })
 export class AddNewTeacherComponent implements OnInit {
 
-  constructor(private service : AppServiceService, private router: Router) { }
+  constructor(private service: AppServiceService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
   createTeacher(value){
 
     const teacher = {
       id : value.id,
       name : value.name,
       age : value.age
-    }
+    };
 
 
-    this.service.addTeacher(teacher).subscribe((response)=>{
-      this.router.navigate([''])
-    },(error)=>{
-      console.log('ERROR - ', error)
-    })
+    this.service.addTeacher(teacher).subscribe((response) => {
+      this.router.navigate(['']);
+    }, (error) => {
+      console.log('ERROR - ', error);
+    });
   }
 
 }
