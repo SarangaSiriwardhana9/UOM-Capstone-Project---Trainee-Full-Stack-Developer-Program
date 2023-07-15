@@ -1,0 +1,174 @@
+{
+  "tests": [
+    {
+      "name": "Backend List Teachers",
+      "setup": "npm install",
+      "run": "npm test -- -t \"GET /listTeachers should show all teachers\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend Add Teacher",
+      "setup": "npm install",
+      "run": "npm test -- -t \"POST /addTeacher should show a newly added teacher\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend Edit Teacher",
+      "setup": "npm install",
+      "run": "npm test -- -t \"POST /editTeacher should show a newly added teacher\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend Delete Teacher",
+      "setup": "npm install",
+      "run": "npm test -- -t \"POST /deleteTeacher should delete a teacher\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend List Students",
+      "setup": "npm install",
+      "run": "npm test -- -t \"GET /listStudents should show all students\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend Add Student",
+      "setup": "npm install",
+      "run": "npm test -- -t \"POST /addStudent should show a newly added student\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend Edit Student",
+      "setup": "npm install",
+      "run": "npm test -- -t \"POST /editStudent should edit a Student\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Backend Delete Student",
+      "setup": "npm install",
+      "run": "npm test -- -t \"POST /deleteStudent should delete a student\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Dummy Test",
+      "setup": "npm install",
+      "run": "file=./test/dummy.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Frontend Add Student",
+      "setup": "npm install",
+      "run": "file=./test/student-add.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Delete Student",
+      "setup": "npm install",
+      "run": "file=./test/student-delete.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Edit Student",
+      "setup": "npm install",
+      "run": "file=./test/student-edit.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Search Student",
+      "setup": "npm install",
+      "run": "file=./test/student-search.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Add Teacher",
+      "setup": "npm install",
+      "run": "file=./test/teacher-add.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Delete Teacher",
+      "setup": "npm install",
+      "run": "file=./test/teacher-delete.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Edit Teacher",
+      "setup": "npm install",
+      "run": "file=./test/teacher-edit.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frontend Search Teacher",
+      "setup": "npm install",
+      "run": "file=./test/teacher-search.test.js npm run test --prefix ./frontend",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
