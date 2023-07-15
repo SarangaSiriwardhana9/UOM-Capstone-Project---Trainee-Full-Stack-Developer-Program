@@ -1,31 +1,31 @@
 table {
-    font-family: 'Poppins', sans-serif;
-    border-collapse: collapse;
-    width: 75%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  td, th {
-    text-align: left;
-    padding: 8px;
-  }
+  font-family: 'Poppins', sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 
-  th{
-    font-size: 16px;
-    background-color: #dddddd;
-  }
+td, th {
+  text-align: left;
+  padding: 8px;
+}
 
-  tr{
-    font-size: 14px;
-    background-color: white;
-  }
+th{
+  font-size: 16px;
+  background-color: #dddddd;
+}
+
+tr{
+  font-size: 14px;
+  background-color: white;
+}
 
 .table-container{
-    padding: 0px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trash-icon{

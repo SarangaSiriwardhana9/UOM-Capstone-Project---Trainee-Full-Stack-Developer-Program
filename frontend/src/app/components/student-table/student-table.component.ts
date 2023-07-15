@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router,NavigationExtras } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 import { faTrash, faPlus, faPenSquare } from '@fortawesome/free-solid-svg-icons';
-import {AppServiceService} from '../../app-service.service';
+import { AppServiceService } from '../../app-service.service';
 @Component({
   selector: 'app-student-table',
   templateUrl: './student-table.component.html',
@@ -51,6 +51,7 @@ export class StudentTableComponent implements OnInit {
     })
   }
 
+  //Searching value in table
   search(value) {
     let foundItems = [];
     if (value.length <= 0) {
