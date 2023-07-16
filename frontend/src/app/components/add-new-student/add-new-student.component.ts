@@ -32,5 +32,3 @@ export class AddNewStudentComponent implements OnInit {
   }
 
 }
-
-//sara test
