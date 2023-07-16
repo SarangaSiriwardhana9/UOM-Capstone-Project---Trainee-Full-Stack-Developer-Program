@@ -12,7 +12,7 @@ export class EditStudentComponent implements OnInit {
   studentData: any;
 
 
-  constructor(private service: AppServiceService, private router: Router) { }
+  constructor(private service : AppServiceService, private router: Router) { }
 
   navigation = this.router.getCurrentNavigation();
 
@@ -20,26 +20,24 @@ export class EditStudentComponent implements OnInit {
     this.getStudentData();
   }
 
-  // tslint:disable-next-line:typedef
   getStudentData(){
-    const student = {
+    let student = {
       id : this.navigation.extras.state.id
-    };
-    this.service.getOneStudentData(student).subscribe((response) => {
+    }
+    this.service.getOneStudentData(student).subscribe((response)=>{
       this.studentData = response[0];
-    }, (error) => {
-      console.log('ERROR - ', error);
-    });
+    },(error)=>{
+      console.log('ERROR - ', error)
+    })
   }
 
-  // tslint:disable-next-line:typedef
   editStudent(values){
     values.id = this.navigation.extras.state.id;
-    this.service.editStudent(values).subscribe((response) => {
+    this.service.editStudent(values).subscribe((response)=>{
       this.studentData = response[0];
-    }, (error) => {
-      console.log('ERROR - ', error);
-    });
+    },(error)=>{
+      console.log('ERROR - ', error)
+    })
   }
 
 }
